@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+
+  min-height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image {
+  width: 370px;
+  margin-top: 50px;
+}
+
+.footer {
+  display: block;
+  margin-top: 50px;
+  padding-top: 70px 0;
+  overflow: hidden;
+  background-color: #18181a;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.innerfooter{
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+
+.innerfooter .logocontainer {
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
+}
+
+.innerfooter .logocontainer h1 {
+  font-family: 'arial';
+  font-size: 22px;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.innerfooter .logocontainer img {
+  width: 70px;
+  height: auto;
+}
+
+.innerfooter .thirdfooter {
+  width: calc(21.6666666667% - 20px);
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+
+.innerfooter .thirdfooter:last-child {
+  margin-right: 0;
+}
+
+.innerfooter .thirdfooter h1 {
+  font-family: 'arial';
+  font-size: 22px;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.innerfooter .thirdfooter p {
+  font-family: 'arial';
+  font-size: 18px;
+  color: white;
+  font-weight: 200;
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    margin: 0 10%;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .footer .innerfooter{
+    width: 90%;
+  }
+
+  .innerfooter .logocontainer,
+  .innerfooter .thirdfooter {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
